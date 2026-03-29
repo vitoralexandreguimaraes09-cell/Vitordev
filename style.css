@@ -148,7 +148,7 @@ button:active{
 }
 
 .slide-out {
-    animation: slideOut 0.5s forwards;
+    animation: slideOut 1s forwards;
 }
 
 @keyframes slideOut {
