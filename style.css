@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, darkred, darkblue);
+  color: white;
+  min-height: 100vh;
+}
+
+header{
+  text-align: center;
+  padding: 40px 20px;
+  animation: fadeDown 1s ease;
+}
+
+h1{
+  font-size: 2.5em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* 🔥 ESSENCIAL */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255,255,255, 0.08);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 20px;
+    width: 300px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    animation: fadeUp 1s ease;
+}
+
+.card:hover{
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card h4{
+  margin-bottom: 15px;
+}
+
+.card p{
+  opacity: 0.9;
+}
+/*card1*/
+.card1{
+  background: rgba(255,255,255, 0.08);
+    backdrop-filter: blur(12px);
+    padding: 10px;
+    border-radius: 20px;
+    width: 200px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    animation: fadeUp 1s ease;
+    pointer-events: none;
+}
+
+.card1:hover{
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+/*--------------------*/
+
+button{
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(45deg, red, blue);
+  color: white;
+  transition: 0.2s;
+}
+
+button:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 15px black;
+}
+
+button:active{
+  transform: scale(0.95);
+}
+
+/*animações*/
+@keyframes fadeDown{
+  from{opacity: 0; transform: translateY(-30px);}
+  to{
+    opacity: 1; transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp{
+  from{
+    opacity: 0; transform: translateY(40px);
+  }
+  to{
+    opacity: 1; transform: translateY(0);
+  }
+}
+
+.fade{
+  animation: fadeText 1s;
+}
+
+@keyframes fadeText{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@keyframes sair {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+.saindo {
+    animation: sair 0.4s forwards;
+}
+
+
+.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition: all 1s ease;
+}
+
+/* desaparecer */
+.esconder {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease;
+}
