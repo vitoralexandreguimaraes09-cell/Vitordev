@@ -45,6 +45,10 @@ fechar.addEventListener("click", () => {
     fechar.style.display = "none";
 });
 
+function voltar() {
+    window.location.href = "index.html";
+};
+
 function irDashboard() {
     window.location.href = "AbaFilmes.html";
-}
+};
