@@ -60,7 +60,7 @@ h1{
     padding: 10px;
     border-radius: 20px;
     width: 200px;
-    transition: all 0.3s ease;
+    transition: all 1s ease;
     cursor: pointer;
     animation: fadeUp 1s ease;
     pointer-events: none;
@@ -130,7 +130,7 @@ button:active{
 }
 
 .saindo {
-    animation: sair 0.4s forwards;
+    animation: sair 1s forwards;
 }
 
 
