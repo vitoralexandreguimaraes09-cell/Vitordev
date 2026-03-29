@@ -49,14 +49,10 @@ function voltar() {
     window.location.href = "index.html";
 };
 
-function irDashboard() {
-    window.location.href = "AbaFilmes.html";
-};
-
 function irPagina() {
     document.body.classList.add("slide-out");
 
     setTimeout(() => {
-        window.location.href = "dashboard.html";
+        window.location.href = "AbaFilmes.html";
     }, 500);
 }
