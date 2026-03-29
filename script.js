@@ -52,3 +52,11 @@ function voltar() {
 function irDashboard() {
     window.location.href = "AbaFilmes.html";
 };
+
+function irPagina() {
+    document.body.classList.add("slide-out");
+
+    setTimeout(() => {
+        window.location.href = "dashboard.html";
+    }, 500);
+}
