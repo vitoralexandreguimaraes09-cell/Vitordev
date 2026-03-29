@@ -36,7 +36,7 @@ h1{
     padding: 25px;
     border-radius: 20px;
     width: 300px;
-    transition: all 0.3s ease;
+    transition: all 1s ease;
     cursor: pointer;
     animation: fadeUp 1s ease;
 }
@@ -80,7 +80,7 @@ button{
   cursor: pointer;
   background: linear-gradient(45deg, red, blue);
   color: white;
-  transition: 0.2s;
+  transition: 1s;
 }
 
 button:hover{
