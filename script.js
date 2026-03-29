@@ -66,9 +66,9 @@ fechar.addEventListener("click", () => {
 
         setTimeout(() => {
             card1.style.display = "none";
-        }, 400);
+        }, 500);
 
-    }, 200);
+    }, 300);
 
     fechar.style.display = "none";
 });
