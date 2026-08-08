@@ -83,7 +83,7 @@ button{
 }
 
 button:hover{
-  transform: scale(1.1);
+  transform: scale(0.8);
   box-shadow: 0 0 15px black;
 }
 
