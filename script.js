@@ -56,3 +56,9 @@ function irPagina() {
         window.location.href = "AbaFilmes.html";
     }, 500);
 }
+
+window.addEventListener("pageshow", function (event) {
+    if (event.persisted) {
+        window.location.reload();
+    }
+});
